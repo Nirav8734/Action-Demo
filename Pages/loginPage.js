@@ -15,11 +15,11 @@ class loginPage {
     }
 
     async login(username , password){
-        await this.help.click(this.loc.loginlink);
-        await this.help.fill(this.loc.usernameinput, username)
-        await this.help.click(this.loc.buttoninput);
-        await this.help.fill(this.loc.passwordinput, password);
-        await this.help.click(this.loc.signininput);
+        await this.page.click(this.loc.loginlink);
+        await this.page.fill(this.loc.usernameinput, username)
+        await this.page.click(this.loc.buttoninput);
+        await this.page.fill(this.loc.passwordinput, password);
+        await this.page.click(this.loc.signininput);
     }
 }
 
