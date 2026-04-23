@@ -13,12 +13,12 @@ export class Helpers {
   // 🖱️ SMART CLICK METHODS
   // =============================
 
-  /*async click(locator) {
+  async click(locator) {
     await locator.waitFor({ state: 'visible' });
     await locator.scrollIntoViewIfNeeded();
     await locator.click();
   }
-  */
+  
   async clickWithHover(locator) {
     await locator.waitFor({ state: 'visible' });
     await locator.scrollIntoViewIfNeeded();
