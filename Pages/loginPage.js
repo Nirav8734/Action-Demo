@@ -11,7 +11,7 @@ class loginPage {
     }
 
     async gotologinpage(url){
-        await this.help.open(url)
+        //await this.help.open(url)
     }
 
     async login(username , password){
