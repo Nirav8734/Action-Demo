@@ -20,7 +20,7 @@ export class Helpers {
   }
   
   async clickWithHover(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.scrollIntoViewIfNeeded();
     await locator.hover();
     await locator.click();
@@ -29,7 +29,7 @@ export class Helpers {
   async clickWithRetry(locator, retries = 3) {
     for (let i = 0; i < retries; i++) {
       try {
-        await locator.waitFor({ state: 'visible' });
+        //await locator.waitFor({ state: 'visible' });
         await locator.click();
         return;
       } catch (e) {
@@ -53,7 +53,7 @@ export class Helpers {
   }
 
   async fillWithClear(locator, value) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.click();
     await locator.fill('');
     await this.page.waitForTimeout(200);
@@ -61,7 +61,7 @@ export class Helpers {
   }
 
   async typeSlow(locator, value) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.click();
     await locator.fill('');
     await locator.type(value, { delay: 100 });
@@ -72,7 +72,7 @@ export class Helpers {
   // =============================
 
   async getText(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     return await locator.textContent();
   }
 
@@ -86,15 +86,15 @@ export class Helpers {
   // =============================
 
   async waitForVisible(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
   }
 
   async waitForHidden(locator) {
-    await locator.waitFor({ state: 'hidden' });
+    //await locator.waitFor({ state: 'hidden' });
   }
 
   async waitAndClick(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.click();
   }
 
@@ -112,12 +112,12 @@ export class Helpers {
   // =============================
 
   async selectByLabel(locator, label) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.selectOption({ label });
   }
 
   async selectByValue(locator, value) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.selectOption(value);
   }
 
@@ -126,7 +126,7 @@ export class Helpers {
   // =============================
 
   async hover(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.hover();
   }
 
