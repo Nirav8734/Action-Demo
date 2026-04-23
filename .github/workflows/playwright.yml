@@ -98,7 +98,7 @@ jobs:
           username: ${{ secrets.EMAIL_USERNAME }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: "Playwright Test Report"
-          to: ${{ github.event.inputs.email }}
+          to: niravprajapati1309@gmail.com
           from: ${{ secrets.EMAIL_USERNAME }}
           body: |
             Hello,
