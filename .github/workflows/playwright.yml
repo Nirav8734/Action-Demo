@@ -98,7 +98,7 @@ jobs:
             password: ${{ secrets.EMAIL_PASSWORD }}
             subject: "Playwright Test Report"
             to: niravprajapati1309@gmail.com
-            from: "Playwright Bot <${{ secrets.EMAIL_USERNAME }}>"
+            from: "Playwright Bot ${{ secrets.EMAIL_USERNAME }}"
             body: |
               Hello,
 
