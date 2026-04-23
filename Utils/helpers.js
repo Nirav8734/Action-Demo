@@ -14,7 +14,7 @@ export class Helpers {
   // =============================
 
   async click(locator) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.scrollIntoViewIfNeeded();
     await locator.click();
   }
