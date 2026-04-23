@@ -1,6 +1,6 @@
 export const TestData = {
     login: {
-        url: 'https://www.amazon.com/',
+        url: 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login',
         validuser: {
             username: 'niravprajapati1309@gmail.com',
             password: '8734986314',
