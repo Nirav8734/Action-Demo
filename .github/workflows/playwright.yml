@@ -89,22 +89,21 @@ jobs:
           path: playwright-report/
 
       - name: 📧 Send Email with Report
-        if: ${{ github.event.inputs.email != '' }}
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          secure: true
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "Playwright Test Report"
-          to: niravprajapati1309@gmail.com
-          from: ${{ secrets.EMAIL_USERNAME }}
-          body: |
-            Hello,
+            server_address: smtp.gmail.com
+            server_port: 465
+            secure: true
+            username: ${{ secrets.EMAIL_USERNAME }}
+            password: ${{ secrets.EMAIL_PASSWORD }}
+            subject: "Playwright Test Report"
+            to: niravprajapati1309@gmail.com
+            from: "Playwright Bot <${{ secrets.EMAIL_USERNAME }}>"
+            body: |
+              Hello,
 
-            Please find attached the Playwright test report.
+              Please find attached the Playwright test report.
 
-            Regards,
-            Automation Team
-          attachments: playwright-report/index.html
+              Regards,
+              Automation Team
+            attachments: playwright-report/index.html
