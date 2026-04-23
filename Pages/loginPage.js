@@ -14,8 +14,7 @@ class loginPage {
         await this.help.open(url)
     }
 
-    async login(username , password){
-        await this.loc.loginlink.hover();   
+    async login(username , password){ 
         await this.loc.loginlink.click();   
 
         await this.loc.usernameinput.fill(username); 
