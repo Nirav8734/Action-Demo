@@ -48,7 +48,7 @@ export class Helpers {
   // =============================
 
   async fill(locator, value) {
-    await locator.waitFor({ state: 'visible' });
+    //await locator.waitFor({ state: 'visible' });
     await locator.fill(value);
   }
 
