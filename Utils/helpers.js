@@ -1,4 +1,4 @@
-/*export class Helpers {
+export class Helpers {
   constructor(page) {
     this.page = page;
   }
@@ -192,4 +192,4 @@
     await this.page.screenshot({ path: name, fullPage: true });
   }
 }
-*/
+
