@@ -1,11 +1,11 @@
 const { expect } = require("@playwright/test");
 const { Helpers } = require("../Utils/helpers");
-const { LoginLocators } = require("../Locators/LoginLocators");
+const { loginLocators } = require("../Locators/LoginLocators");
 
 class loginPage {
     constructor(page){
         this.page = page;
-        this.loc = new LoginLocators(page);
+        this.loc = new loginLocators(page);
         this.help = new Helpers(page);
     }
 

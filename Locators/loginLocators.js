@@ -1,4 +1,4 @@
-class LoginLocators {
+class loginLocators {
     constructor(page){
         this.page = page;
 
@@ -11,4 +11,4 @@ class LoginLocators {
         this.signininput= page.locator('//button[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]')
     }
 }
-module.exports = {LoginLocators};
+module.exports = {loginLocators};

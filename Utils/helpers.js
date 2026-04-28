@@ -1,9 +1,8 @@
-export class Helpers {
+class Helpers {
   constructor(page) {
     this.page = page;
   }
 
-  // 🌐 Navigation
   async open(url) {
     await this.page.goto(url);
     await this.page.waitForLoadState('domcontentloaded');
@@ -192,4 +191,6 @@ export class Helpers {
     await this.page.screenshot({ path: name, fullPage: true });
   }
 }
+
+module.exports = { Helpers };
 
