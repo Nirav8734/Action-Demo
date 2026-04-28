@@ -1,6 +1,6 @@
 const { expect } = require("@playwright/test");
 const { Helpers } = require("../Utils/helpers");
-const { LoginLocators } = require("../Locators/loginLocators");
+const { LoginLocators } = require("../Locators/LoginLocators");
 
 class loginPage {
     constructor(page){
@@ -13,9 +13,11 @@ class loginPage {
         await this.help.open(url);
     }
 
-    async login(username, password){ 
-        await this.loc.usernameinput.fill(username); 
-        await this.loc.passwordinput.fill(password);
+    async login(Username, Password){ 
+        //console.log("Username:", Username);
+        //console.log("Password:", Password);
+        await this.loc.usernameinput.fill(Username); 
+        await this.loc.passwordinput.fill(Password);
         await this.loc.signininput.click();
     }
 }
